@@ -1,0 +1,13 @@
+int main() {
+    int ad = 10;
+    float bf = -3.14+ad;
+    if (ad > 5) {
+        printf("Hello World");
+        ad++;
+    }
+    return 0;
+}
+@
+
+
+
