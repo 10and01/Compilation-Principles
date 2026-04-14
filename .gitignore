@@ -13,7 +13,6 @@ bin/
 out/
 
 # IDE and editor files
-.vscode/
 .idea/
 *.swp
 *.swo

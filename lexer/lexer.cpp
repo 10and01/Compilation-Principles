@@ -68,9 +68,27 @@ void resetColor() {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 }
 
-// 清屏
+// 清屏（避免使用 system() 以防止 shell 注入风险）
 void clearScreen() {
-    system("cls");
+#ifdef _WIN32
+    // 使用 Windows API 代替 system("cls")，避免 shell 注入风险
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    DWORD count;
+    DWORD cellCount;
+    COORD homeCoords = {0, 0};
+
+    if (hConsole == INVALID_HANDLE_VALUE) return;
+    if (!GetConsoleScreenBufferInfo(hConsole, &csbi)) return;
+    cellCount = csbi.dwSize.X * csbi.dwSize.Y;
+
+    FillConsoleOutputCharacter(hConsole, ' ', cellCount, homeCoords, &count);
+    FillConsoleOutputAttribute(hConsole, csbi.wAttributes, cellCount, homeCoords, &count);
+    SetConsoleCursorPosition(hConsole, homeCoords);
+#else
+    // ANSI escape sequence for non-Windows platforms
+    cout << "\033[2J\033[H";
+#endif
 }
 
 // 在指定位置打印
@@ -576,12 +594,22 @@ int main() {
     cout << "请选择模式 (1/2): ";
     
     int mode;
-    cin >> mode;
+    if (!(cin >> mode) || (mode != 1 && mode != 2)) {
+        cerr << "输入无效，使用默认快速模式" << endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+        mode = 2;
+    }
     visualizeMode = (mode == 1);
     
     if (visualizeMode) {
         cout << "请输入延迟时间(毫秒，建议100-1000): ";
-        cin >> delayMs;
+        if (!(cin >> delayMs) || delayMs < 0 || delayMs > 10000) {
+            cerr << "输入无效，使用默认延迟 500ms" << endl;
+            cin.clear();
+            cin.ignore(10000, '\n');
+            delayMs = 500;
+        }
     }
     
     // 打开文件
