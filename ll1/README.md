@@ -103,7 +103,3 @@ python main.py -i input.txt -o output.txt --img-dir images --max-visual-steps 80
 1. `expression_01_tree.svg`：表达式 1 的语法树
 2. `expression_01_process.svg`：表达式 1 的分析过程
 3. 其余表达式按同样命名规则生成
-
-## 7. 可视化
-
-如果你想直接看图形化内容，请打开 [visualization.md](visualization.md)。这里包含文法改写图、预测分析流程图和示例语法树，使用 Markdown 预览即可直接显示。
