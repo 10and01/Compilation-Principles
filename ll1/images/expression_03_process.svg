@@ -1,0 +1,268 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1800' height='8316' viewBox='0 0 1800 8316'><defs><marker id='arrow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#7f8c8d'/></marker></defs><rect width='100%' height='100%' fill='#f4f7fb'/>
+<text x='900.0' y='48.0' font-family='Arial' font-size='24' text-anchor='middle' fill='#2c3e50'>LL(1) Predictive Parsing Steps</text>
+<text x='900.0' y='74' font-family='Arial' font-size='16' text-anchor='middle' fill='#34495e'>Expression: (1+2)*3+4-(5+6*7);</text>
+<rect x='70.0' y='90.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='124.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 1: E -&gt; T E&#x27;</text>
+<text x='88.0' y='154.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T</text>
+<text x='88.0' y='182.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='216.0' x2='900.0' y2='234.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='242.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='276.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 2: T -&gt; F T&#x27;</text>
+<text x='88.0' y='306.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; F</text>
+<text x='88.0' y='334.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='368.0' x2='900.0' y2='386.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='394.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='428.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 3: F -&gt; ( E )</text>
+<text x='88.0' y='458.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E (</text>
+<text x='88.0' y='486.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='520.0' x2='900.0' y2='538.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='546.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='580.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 4: 匹配终结符 (</text>
+<text x='88.0' y='610.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E</text>
+<text x='88.0' y='638.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='672.0' x2='900.0' y2='690.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='698.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='732.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 5: E -&gt; T E&#x27;</text>
+<text x='88.0' y='762.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T</text>
+<text x='88.0' y='790.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='824.0' x2='900.0' y2='842.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='850.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='884.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 6: T -&gt; F T&#x27;</text>
+<text x='88.0' y='914.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F</text>
+<text x='88.0' y='942.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='976.0' x2='900.0' y2='994.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1002.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1036.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 7: F -&gt; num</text>
+<text x='88.0' y='1066.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; num</text>
+<text x='88.0' y='1094.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 1 + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1128.0' x2='900.0' y2='1146.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1154.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1188.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 8: 匹配终结符 num</text>
+<text x='88.0' y='1218.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27;</text>
+<text x='88.0' y='1246.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1280.0' x2='900.0' y2='1298.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1306.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1340.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 9: T&#x27; -&gt; ε</text>
+<text x='88.0' y='1370.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27;</text>
+<text x='88.0' y='1398.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1432.0' x2='900.0' y2='1450.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1458.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1492.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 10: E&#x27; -&gt; + T E&#x27;</text>
+<text x='88.0' y='1522.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T +</text>
+<text x='88.0' y='1550.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1584.0' x2='900.0' y2='1602.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1610.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1644.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 11: 匹配终结符 +</text>
+<text x='88.0' y='1674.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T</text>
+<text x='88.0' y='1702.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1736.0' x2='900.0' y2='1754.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1762.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1796.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 12: T -&gt; F T&#x27;</text>
+<text x='88.0' y='1826.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F</text>
+<text x='88.0' y='1854.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='1888.0' x2='900.0' y2='1906.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='1914.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='1948.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 13: F -&gt; num</text>
+<text x='88.0' y='1978.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; num</text>
+<text x='88.0' y='2006.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 2 ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2040.0' x2='900.0' y2='2058.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2066.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2100.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 14: 匹配终结符 num</text>
+<text x='88.0' y='2130.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27;</text>
+<text x='88.0' y='2158.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2192.0' x2='900.0' y2='2210.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2218.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2252.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 15: T&#x27; -&gt; ε</text>
+<text x='88.0' y='2282.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27;</text>
+<text x='88.0' y='2310.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2344.0' x2='900.0' y2='2362.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2370.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2404.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 16: E&#x27; -&gt; ε</text>
+<text x='88.0' y='2434.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; )</text>
+<text x='88.0' y='2462.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2496.0' x2='900.0' y2='2514.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2522.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2556.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 17: 匹配终结符 )</text>
+<text x='88.0' y='2586.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27;</text>
+<text x='88.0' y='2614.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2648.0' x2='900.0' y2='2666.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2674.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2708.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 18: T&#x27; -&gt; * F T&#x27;</text>
+<text x='88.0' y='2738.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; F *</text>
+<text x='88.0' y='2766.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : * 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2800.0' x2='900.0' y2='2818.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2826.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='2860.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 19: 匹配终结符 *</text>
+<text x='88.0' y='2890.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; F</text>
+<text x='88.0' y='2918.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='2952.0' x2='900.0' y2='2970.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='2978.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3012.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 20: F -&gt; num</text>
+<text x='88.0' y='3042.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; num</text>
+<text x='88.0' y='3070.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 3 + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3104.0' x2='900.0' y2='3122.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3130.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3164.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 21: 匹配终结符 num</text>
+<text x='88.0' y='3194.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27;</text>
+<text x='88.0' y='3222.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3256.0' x2='900.0' y2='3274.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3282.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3316.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 22: T&#x27; -&gt; ε</text>
+<text x='88.0' y='3346.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27;</text>
+<text x='88.0' y='3374.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3408.0' x2='900.0' y2='3426.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3434.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3468.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 23: E&#x27; -&gt; + T E&#x27;</text>
+<text x='88.0' y='3498.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T +</text>
+<text x='88.0' y='3526.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3560.0' x2='900.0' y2='3578.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3586.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3620.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 24: 匹配终结符 +</text>
+<text x='88.0' y='3650.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T</text>
+<text x='88.0' y='3678.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3712.0' x2='900.0' y2='3730.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3738.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3772.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 25: T -&gt; F T&#x27;</text>
+<text x='88.0' y='3802.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; F</text>
+<text x='88.0' y='3830.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='3864.0' x2='900.0' y2='3882.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='3890.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='3924.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 26: F -&gt; num</text>
+<text x='88.0' y='3954.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; num</text>
+<text x='88.0' y='3982.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 4 - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4016.0' x2='900.0' y2='4034.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4042.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4076.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 27: 匹配终结符 num</text>
+<text x='88.0' y='4106.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27;</text>
+<text x='88.0' y='4134.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4168.0' x2='900.0' y2='4186.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4194.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4228.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 28: T&#x27; -&gt; ε</text>
+<text x='88.0' y='4258.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27;</text>
+<text x='88.0' y='4286.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4320.0' x2='900.0' y2='4338.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4346.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4380.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 29: E&#x27; -&gt; - T E&#x27;</text>
+<text x='88.0' y='4410.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T -</text>
+<text x='88.0' y='4438.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : - ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4472.0' x2='900.0' y2='4490.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4498.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4532.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 30: 匹配终结符 -</text>
+<text x='88.0' y='4562.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T</text>
+<text x='88.0' y='4590.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4624.0' x2='900.0' y2='4642.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4650.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4684.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 31: T -&gt; F T&#x27;</text>
+<text x='88.0' y='4714.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; F</text>
+<text x='88.0' y='4742.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4776.0' x2='900.0' y2='4794.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4802.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4836.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 32: F -&gt; ( E )</text>
+<text x='88.0' y='4866.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E (</text>
+<text x='88.0' y='4894.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ( 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='4928.0' x2='900.0' y2='4946.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='4954.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='4988.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 33: 匹配终结符 (</text>
+<text x='88.0' y='5018.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E</text>
+<text x='88.0' y='5046.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='5080.0' x2='900.0' y2='5098.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5106.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5140.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 34: E -&gt; T E&#x27;</text>
+<text x='88.0' y='5170.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T</text>
+<text x='88.0' y='5198.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='5232.0' x2='900.0' y2='5250.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5258.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5292.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 35: T -&gt; F T&#x27;</text>
+<text x='88.0' y='5322.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F</text>
+<text x='88.0' y='5350.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='5384.0' x2='900.0' y2='5402.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5410.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5444.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 36: F -&gt; num</text>
+<text x='88.0' y='5474.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; num</text>
+<text x='88.0' y='5502.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 5 + 6 * 7 ) $</text>
+<line x1='900.0' y1='5536.0' x2='900.0' y2='5554.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5562.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5596.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 37: 匹配终结符 num</text>
+<text x='88.0' y='5626.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27;</text>
+<text x='88.0' y='5654.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 6 * 7 ) $</text>
+<line x1='900.0' y1='5688.0' x2='900.0' y2='5706.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5714.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5748.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 38: T&#x27; -&gt; ε</text>
+<text x='88.0' y='5778.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27;</text>
+<text x='88.0' y='5806.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 6 * 7 ) $</text>
+<line x1='900.0' y1='5840.0' x2='900.0' y2='5858.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='5866.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='5900.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 39: E&#x27; -&gt; + T E&#x27;</text>
+<text x='88.0' y='5930.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T +</text>
+<text x='88.0' y='5958.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : + 6 * 7 ) $</text>
+<line x1='900.0' y1='5992.0' x2='900.0' y2='6010.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6018.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6052.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 40: 匹配终结符 +</text>
+<text x='88.0' y='6082.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T</text>
+<text x='88.0' y='6110.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 6 * 7 ) $</text>
+<line x1='900.0' y1='6144.0' x2='900.0' y2='6162.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6170.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6204.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 41: T -&gt; F T&#x27;</text>
+<text x='88.0' y='6234.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F</text>
+<text x='88.0' y='6262.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 6 * 7 ) $</text>
+<line x1='900.0' y1='6296.0' x2='900.0' y2='6314.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6322.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6356.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 42: F -&gt; num</text>
+<text x='88.0' y='6386.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; num</text>
+<text x='88.0' y='6414.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 6 * 7 ) $</text>
+<line x1='900.0' y1='6448.0' x2='900.0' y2='6466.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6474.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6508.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 43: 匹配终结符 num</text>
+<text x='88.0' y='6538.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27;</text>
+<text x='88.0' y='6566.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : * 7 ) $</text>
+<line x1='900.0' y1='6600.0' x2='900.0' y2='6618.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6626.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6660.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 44: T&#x27; -&gt; * F T&#x27;</text>
+<text x='88.0' y='6690.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F *</text>
+<text x='88.0' y='6718.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : * 7 ) $</text>
+<line x1='900.0' y1='6752.0' x2='900.0' y2='6770.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6778.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6812.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 45: 匹配终结符 *</text>
+<text x='88.0' y='6842.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; F</text>
+<text x='88.0' y='6870.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 7 ) $</text>
+<line x1='900.0' y1='6904.0' x2='900.0' y2='6922.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='6930.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='6964.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 46: F -&gt; num</text>
+<text x='88.0' y='6994.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27; num</text>
+<text x='88.0' y='7022.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : 7 ) $</text>
+<line x1='900.0' y1='7056.0' x2='900.0' y2='7074.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7082.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7116.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 47: 匹配终结符 num</text>
+<text x='88.0' y='7146.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27; T&#x27;</text>
+<text x='88.0' y='7174.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) $</text>
+<line x1='900.0' y1='7208.0' x2='900.0' y2='7226.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7234.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7268.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 48: T&#x27; -&gt; ε</text>
+<text x='88.0' y='7298.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; ) E&#x27;</text>
+<text x='88.0' y='7326.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) $</text>
+<line x1='900.0' y1='7360.0' x2='900.0' y2='7378.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7386.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7420.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 49: E&#x27; -&gt; ε</text>
+<text x='88.0' y='7450.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27; )</text>
+<text x='88.0' y='7478.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : ) $</text>
+<line x1='900.0' y1='7512.0' x2='900.0' y2='7530.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7538.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7572.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 50: 匹配终结符 )</text>
+<text x='88.0' y='7602.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27; T&#x27;</text>
+<text x='88.0' y='7630.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : $</text>
+<line x1='900.0' y1='7664.0' x2='900.0' y2='7682.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7690.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7724.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 51: T&#x27; -&gt; ε</text>
+<text x='88.0' y='7754.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $ E&#x27;</text>
+<text x='88.0' y='7782.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : $</text>
+<line x1='900.0' y1='7816.0' x2='900.0' y2='7834.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7842.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='7876.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 52: E&#x27; -&gt; ε</text>
+<text x='88.0' y='7906.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : $</text>
+<text x='88.0' y='7934.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : $</text>
+<line x1='900.0' y1='7968.0' x2='900.0' y2='7986.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<rect x='70.0' y='7994.0' width='1660.0' height='126.0' rx='12' ry='12' fill='#f8fbff' stroke='#3498db' stroke-width='2' />
+<text x='88.0' y='8028.0' font-family='Arial' font-size='16' text-anchor='start' fill='#2c3e50'>Step 53: 匹配终结符 $</text>
+<text x='88.0' y='8058.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Stack    : &lt;empty&gt;</text>
+<text x='88.0' y='8086.0' font-family='Arial' font-size='14' text-anchor='start' fill='#34495e'>Input    : $</text>
+</svg>
