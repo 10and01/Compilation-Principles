@@ -1,0 +1,53 @@
+Operator-Precedence Parser
+Grammar:
+  E -> E + T | T
+  T -> T * F | F
+  F -> ( E ) | i
+
+FirstVT:
+  FirstVT(E) = {(, *, +, i}
+  FirstVT(F) = {(, i}
+  FirstVT(T) = {(, *, i}
+
+LastVT:
+  LastVT(E) = {), *, +, i}
+  LastVT(F) = {), i}
+  LastVT(T) = {), *, i}
+
+Operator-precedence table:
+      +   *   (   )   i   #
+  +   >   <   <   >   <   >
+  *   >   >   <   >   <   >
+  (   <   <   <   =   <    
+  )   >   >       >       >
+  i   >   >       >       >
+  #   <   <   <       <   =
+
+Expression: (i+i)*i
+Result: ACCEPT (accepted)
+Steps:
+    1 | stack: # (                      | input: i + i ) * i #        | shift (
+    2 | stack: # ( i                    | input: + i ) * i #          | shift i
+    3 | stack: # ( N                    | input: + i ) * i #          | reduce F -> i
+    4 | stack: # ( N +                  | input: i ) * i #            | shift +
+    5 | stack: # ( N + i                | input: ) * i #              | shift i
+    6 | stack: # ( N + N                | input: ) * i #              | reduce F -> i
+    7 | stack: # ( N                    | input: ) * i #              | reduce E -> E + T
+    8 | stack: # ( N )                  | input: * i #                | shift )
+    9 | stack: # N                      | input: * i #                | reduce F -> (E)
+   10 | stack: # N *                    | input: i #                  | shift *
+   11 | stack: # N * i                  | input: #                    | shift i
+   12 | stack: # N * N                  | input: #                    | reduce F -> i
+   13 | stack: # N                      | input: #                    | reduce T -> T * F
+   14 | stack: # N                      | input: #                    | accept
+
+Expression: i+i)*i
+Result: REJECT (no precedence relation between # and ))
+Steps:
+    1 | stack: # i                      | input: + i ) * i #          | shift i
+    2 | stack: # N                      | input: + i ) * i #          | reduce F -> i
+    3 | stack: # N +                    | input: i ) * i #            | shift +
+    4 | stack: # N + i                  | input: ) * i #              | shift i
+    5 | stack: # N + N                  | input: ) * i #              | reduce F -> i
+    6 | stack: # N                      | input: ) * i #              | reduce E -> E + T
+    7 | stack: # N                      | input: ) * i #              | error: no precedence relation between # and )

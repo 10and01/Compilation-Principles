@@ -1,0 +1,165 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1700' height='1490' viewBox='0 0 1700 1490'><defs><marker id='arrow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#7f8c8d'/></marker></defs><rect width='100%' height='100%' fill='#f4f7fb'/>
+<text x='850.0' y='48.0' font-family='Arial' font-size='24' text-anchor='middle' fill='#2c3e50'>Operator-Precedence Parsing Steps (Stack View)</text>
+<text x='850.0' y='74' font-family='Arial' font-size='16' text-anchor='middle' fill='#34495e'>Expression: (i+i)*i</text>
+<text x='96.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 1</text>
+<text x='146.0' y='134.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift (</text>
+<rect x='64.0' y='144.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='70.0' y='278.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='299.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='70.0' y='246.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='267.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<text x='146.0' y='168.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: i + i ) * i #</text>
+<line x1='96.0' y1='136.0' x2='458.0' y2='136.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='494.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 2</text>
+<text x='544.0' y='134.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift i</text>
+<rect x='462.0' y='144.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='468.0' y='278.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='299.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='468.0' y='246.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='267.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='468.0' y='214.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='235.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>i</text>
+<text x='544.0' y='168.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + i ) * i #</text>
+<line x1='494.0' y1='136.0' x2='856.0' y2='136.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='892.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 3</text>
+<text x='942.0' y='134.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce F -&gt; i</text>
+<rect x='860.0' y='144.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='866.0' y='278.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='299.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='866.0' y='246.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='267.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='866.0' y='214.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='235.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='942.0' y='168.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + i ) * i #</text>
+<line x1='892.0' y1='136.0' x2='1254.0' y2='136.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='1290.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 4</text>
+<text x='1340.0' y='134.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift +</text>
+<rect x='1258.0' y='144.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='1264.0' y='278.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='299.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='1264.0' y='246.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='267.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='1264.0' y='214.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='235.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='1264.0' y='182.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='203.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>+</text>
+<text x='1340.0' y='168.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: i ) * i #</text>
+<line x1='1290.0' y1='316.0' x2='96.0' y2='470.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='96.0' y='444.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 5</text>
+<text x='146.0' y='464.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift i</text>
+<rect x='64.0' y='474.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='70.0' y='608.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='629.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='70.0' y='576.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='597.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='70.0' y='544.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='565.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='70.0' y='512.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='533.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>+</text>
+<rect x='70.0' y='480.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='501.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>i</text>
+<text x='146.0' y='498.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: ) * i #</text>
+<line x1='96.0' y1='466.0' x2='458.0' y2='466.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='494.0' y='444.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 6</text>
+<text x='544.0' y='464.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce F -&gt; i</text>
+<rect x='462.0' y='474.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='468.0' y='608.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='629.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='468.0' y='576.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='597.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='468.0' y='544.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='565.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='468.0' y='512.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='533.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>+</text>
+<rect x='468.0' y='480.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='501.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='544.0' y='498.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: ) * i #</text>
+<line x1='494.0' y1='466.0' x2='856.0' y2='466.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='892.0' y='444.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 7</text>
+<text x='942.0' y='464.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce E -&gt; E + T</text>
+<rect x='860.0' y='474.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='866.0' y='608.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='629.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='866.0' y='576.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='597.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='866.0' y='544.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='565.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='942.0' y='498.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: ) * i #</text>
+<line x1='892.0' y1='466.0' x2='1254.0' y2='466.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='1290.0' y='444.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 8</text>
+<text x='1340.0' y='464.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift )</text>
+<rect x='1258.0' y='474.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='1264.0' y='608.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='629.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='1264.0' y='576.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='597.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>(</text>
+<rect x='1264.0' y='544.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='565.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='1264.0' y='512.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='533.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>)</text>
+<text x='1340.0' y='498.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: * i #</text>
+<line x1='1290.0' y1='646.0' x2='96.0' y2='800.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='96.0' y='774.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 9</text>
+<text x='146.0' y='794.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce F -&gt; (E)</text>
+<rect x='64.0' y='804.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='70.0' y='938.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='959.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='70.0' y='906.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='927.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='146.0' y='828.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: * i #</text>
+<line x1='96.0' y1='796.0' x2='458.0' y2='796.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='494.0' y='774.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 10</text>
+<text x='544.0' y='794.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift *</text>
+<rect x='462.0' y='804.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='468.0' y='938.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='959.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='468.0' y='906.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='927.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='468.0' y='874.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='895.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>*</text>
+<text x='544.0' y='828.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: i #</text>
+<line x1='494.0' y1='796.0' x2='856.0' y2='796.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='892.0' y='774.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 11</text>
+<text x='942.0' y='794.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift i</text>
+<rect x='860.0' y='804.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='866.0' y='938.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='959.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='866.0' y='906.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='927.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='866.0' y='874.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='895.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>*</text>
+<rect x='866.0' y='842.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='892.0' y='863.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>i</text>
+<text x='942.0' y='828.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: #</text>
+<line x1='892.0' y1='796.0' x2='1254.0' y2='796.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='1290.0' y='774.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 12</text>
+<text x='1340.0' y='794.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce F -&gt; i</text>
+<rect x='1258.0' y='804.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='1264.0' y='938.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='959.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='1264.0' y='906.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='927.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<rect x='1264.0' y='874.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='895.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>*</text>
+<rect x='1264.0' y='842.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1290.0' y='863.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='1340.0' y='828.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: #</text>
+<line x1='1290.0' y1='976.0' x2='96.0' y2='1130.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='96.0' y='1104.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 13</text>
+<text x='146.0' y='1124.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce T -&gt; T * F</text>
+<rect x='64.0' y='1134.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='70.0' y='1268.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='1289.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='70.0' y='1236.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='1257.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='146.0' y='1158.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: #</text>
+<line x1='96.0' y1='1126.0' x2='458.0' y2='1126.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='494.0' y='1104.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 14</text>
+<text x='544.0' y='1124.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: accept</text>
+<rect x='462.0' y='1134.0' width='64.0' height='172.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<rect x='468.0' y='1268.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='1289.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>#</text>
+<rect x='468.0' y='1236.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='494.0' y='1257.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>N</text>
+<text x='544.0' y='1158.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: #</text>
+</svg>

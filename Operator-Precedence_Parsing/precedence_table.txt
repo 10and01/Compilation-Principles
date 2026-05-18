@@ -1,0 +1,24 @@
+Operator-Precedence Parser
+Grammar:
+  E -> E + T | T
+  T -> T * F | F
+  F -> ( E ) | i
+
+FirstVT:
+  FirstVT(E) = {(, *, +, i}
+  FirstVT(F) = {(, i}
+  FirstVT(T) = {(, *, i}
+
+LastVT:
+  LastVT(E) = {), *, +, i}
+  LastVT(F) = {), i}
+  LastVT(T) = {), *, i}
+
+Operator-precedence table:
+      +   *   (   )   i   #
+  +   >   <   <   >   <   >
+  *   >   >   <   >   <   >
+  (   <   <   <   =   <    
+  )   >   >       >       >
+  i   >   >       >       >
+  #   <   <   <       <   =
