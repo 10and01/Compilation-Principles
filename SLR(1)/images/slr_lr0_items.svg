@@ -1,0 +1,186 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='2000' height='1000' viewBox='0 0 2000 1000'>
+  <defs>
+    <marker id='arrow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'>
+      <path d='M0,0 L10,5 L0,10 z' fill='#7f8c8d'/>
+    </marker>
+  </defs>
+  <rect width='100%' height='100%' fill='#f4f7fb'/>
+
+  <text x='1000' y='40' font-family='Arial' font-size='24' text-anchor='middle' fill='#2c3e50'>LR(0) Item Sets for SLR(1) Table Construction</text>
+
+  <text x='1460' y='620' font-family='Arial' font-size='14' fill='#2c3e50'>Productions</text>
+  <text x='1460' y='642' font-family='Arial' font-size='12' fill='#34495e'>(0) S' -&gt; S</text>
+  <text x='1460' y='660' font-family='Arial' font-size='12' fill='#34495e'>(1) S  -&gt; E</text>
+  <text x='1460' y='678' font-family='Arial' font-size='12' fill='#34495e'>(2) E  -&gt; E + T</text>
+  <text x='1460' y='696' font-family='Arial' font-size='12' fill='#34495e'>(3) E  -&gt; T</text>
+  <text x='1460' y='714' font-family='Arial' font-size='12' fill='#34495e'>(4) T  -&gt; T * F</text>
+  <text x='1460' y='732' font-family='Arial' font-size='12' fill='#34495e'>(5) T  -&gt; F</text>
+  <text x='1460' y='750' font-family='Arial' font-size='12' fill='#34495e'>(6) F  -&gt; ( E )</text>
+  <text x='1460' y='768' font-family='Arial' font-size='12' fill='#34495e'>(7) F  -&gt; i</text>
+
+  <!-- I0 -->
+  <rect x='260' y='360' width='260' height='220' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='390' y='384' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I0</text>
+  <text x='274' y='406' font-family='Arial' font-size='12' fill='#2c3e50'>S' -&gt; . S</text>
+  <text x='274' y='422' font-family='Arial' font-size='12' fill='#2c3e50'>S  -&gt; . E</text>
+  <text x='274' y='438' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; . E + T</text>
+  <text x='274' y='454' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; . T</text>
+  <text x='274' y='470' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . T * F</text>
+  <text x='274' y='486' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . F</text>
+  <text x='274' y='502' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . ( E )</text>
+  <text x='274' y='518' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . i</text>
+
+  <!-- I1 -->
+  <rect x='660' y='80' width='260' height='200' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='104' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I1</text>
+  <text x='674' y='126' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; . E + T</text>
+  <text x='674' y='142' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; . T</text>
+  <text x='674' y='158' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . T * F</text>
+  <text x='674' y='174' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . F</text>
+  <text x='674' y='190' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . ( E )</text>
+  <text x='674' y='206' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; ( . E )</text>
+  <text x='674' y='222' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . i</text>
+
+  <!-- I3 -->
+  <rect x='660' y='320' width='260' height='90' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='344' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I3</text>
+  <text x='674' y='366' font-family='Arial' font-size='12' fill='#2c3e50'>S  -&gt; E .</text>
+  <text x='674' y='382' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; E . + T</text>
+
+  <!-- I6 -->
+  <rect x='660' y='460' width='260' height='90' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='484' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I6</text>
+  <text x='674' y='506' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; T .</text>
+  <text x='674' y='522' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; T . * F</text>
+
+  <!-- I4 -->
+  <rect x='660' y='600' width='260' height='70' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='624' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I4</text>
+  <text x='674' y='646' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; F .</text>
+
+  <!-- I2 -->
+  <rect x='660' y='710' width='260' height='80' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='734' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I2</text>
+  <text x='674' y='756' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; i .</text>
+
+  <!-- I5 -->
+  <rect x='660' y='830' width='260' height='70' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='790' y='854' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I5</text>
+  <text x='674' y='876' font-family='Arial' font-size='12' fill='#2c3e50'>S' -&gt; S .</text>
+
+  <!-- I7 -->
+  <rect x='1060' y='80' width='260' height='90' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1190' y='104' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I7</text>
+  <text x='1074' y='126' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; E . + T</text>
+  <text x='1074' y='142' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; ( E . )</text>
+
+  <!-- I8 -->
+  <rect x='1060' y='230' width='260' height='150' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1190' y='254' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I8</text>
+  <text x='1074' y='276' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; E + . T</text>
+  <text x='1074' y='292' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . T * F</text>
+  <text x='1074' y='308' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; . F</text>
+  <text x='1074' y='324' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . ( E )</text>
+  <text x='1074' y='340' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . i</text>
+
+  <!-- I9 -->
+  <rect x='1060' y='460' width='260' height='110' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1190' y='484' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I9</text>
+  <text x='1074' y='506' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; T * . F</text>
+  <text x='1074' y='522' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . ( E )</text>
+  <text x='1074' y='538' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; . i</text>
+
+  <!-- I10 -->
+  <rect x='1460' y='80' width='260' height='70' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1590' y='104' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I10</text>
+  <text x='1474' y='126' font-family='Arial' font-size='12' fill='#2c3e50'>F  -&gt; ( E ) .</text>
+
+  <!-- I11 -->
+  <rect x='1460' y='230' width='260' height='90' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1590' y='254' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I11</text>
+  <text x='1474' y='276' font-family='Arial' font-size='12' fill='#2c3e50'>E  -&gt; E + T .</text>
+  <text x='1474' y='292' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; T . * F</text>
+
+  <!-- I12 -->
+  <rect x='1460' y='460' width='260' height='70' rx='10' ry='10' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='1590' y='484' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>I12</text>
+  <text x='1474' y='506' font-family='Arial' font-size='12' fill='#2c3e50'>T  -&gt; T * F .</text>
+
+  <!-- I0 transitions -->
+  <line x1='520' y1='380' x2='660' y2='180' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='585' y='300' font-family='Arial' font-size='12' fill='#2c3e50'>(</text>
+
+  <line x1='520' y1='420' x2='660' y2='365' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='585' y='390' font-family='Arial' font-size='12' fill='#2c3e50'>E</text>
+
+  <line x1='520' y1='455' x2='660' y2='505' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='585' y='485' font-family='Arial' font-size='12' fill='#2c3e50'>T</text>
+
+  <path d='M520 490 L560 490 L560 635 L660 635' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='570' y='560' font-family='Arial' font-size='12' fill='#2c3e50'>F</text>
+
+  <path d='M520 525 L580 525 L580 750 L660 750' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='590' y='660' font-family='Arial' font-size='12' fill='#2c3e50'>i</text>
+
+  <path d='M520 560 L600 560 L600 865 L660 865' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='610' y='730' font-family='Arial' font-size='12' fill='#2c3e50'>S</text>
+
+  <!-- I1 self loop on '(' -->
+  <path d='M700 80 C 680 20 900 20 880 80' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='790' y='24' font-family='Arial' font-size='12' fill='#2c3e50'>(</text>
+
+  <!-- I1 transitions -->
+  <line x1='920' y1='160' x2='1060' y2='125' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='990' y='135' font-family='Arial' font-size='12' fill='#2c3e50'>E</text>
+
+  <path d='M920 220 L1760 220 L1760 600 L920 600 L920 505' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='1740' y='420' font-family='Arial' font-size='12' fill='#2c3e50'>T</text>
+
+  <path d='M920 240 L1780 240 L1780 680 L920 680 L920 635' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='1760' y='470' font-family='Arial' font-size='12' fill='#2c3e50'>F</text>
+
+  <path d='M920 260 L1800 260 L1800 800 L920 800 L920 750' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='1780' y='560' font-family='Arial' font-size='12' fill='#2c3e50'>i</text>
+
+  <!-- I3 -> I8 -->
+  <line x1='920' y1='365' x2='1060' y2='305' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='990' y='330' font-family='Arial' font-size='12' fill='#2c3e50'>+</text>
+
+  <!-- I6 -> I9 -->
+  <line x1='920' y1='505' x2='1060' y2='515' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='990' y='500' font-family='Arial' font-size='12' fill='#2c3e50'>*</text>
+
+  <!-- I7 -> I10 and I8 -->
+  <line x1='1320' y1='125' x2='1460' y2='115' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='1390' y='110' font-family='Arial' font-size='12' fill='#2c3e50'>)</text>
+
+  <line x1='1190' y1='170' x2='1190' y2='230' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='1200' y='205' font-family='Arial' font-size='12' fill='#2c3e50'>+</text>
+
+  <!-- I8 -> I11 -->
+  <line x1='1320' y1='305' x2='1460' y2='275' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='1390' y='285' font-family='Arial' font-size='12' fill='#2c3e50'>T</text>
+
+  <!-- I9 -> I12 -->
+  <line x1='1320' y1='515' x2='1460' y2='495' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <text x='1390' y='505' font-family='Arial' font-size='12' fill='#2c3e50'>F</text>
+
+  <!-- Back edges routed via left margin (no crossings) -->
+  <path d='M1320 300 L1340 300 L1340 60 L120 60 L120 160 L660 160' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='130' y='90' font-family='Arial' font-size='12' fill='#2c3e50'>(</text>
+
+  <path d='M1320 515 L1360 515 L1360 80 L140 80 L140 180 L660 180' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='150' y='110' font-family='Arial' font-size='12' fill='#2c3e50'>(</text>
+
+  <path d='M1320 340 L1380 340 L1380 100 L160 100 L160 635 L660 635' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='170' y='130' font-family='Arial' font-size='12' fill='#2c3e50'>F</text>
+
+  <path d='M1320 360 L1400 360 L1400 120 L180 120 L180 730 L660 730' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='190' y='150' font-family='Arial' font-size='12' fill='#2c3e50'>i</text>
+
+  <path d='M1320 540 L1420 540 L1420 140 L190 140 L190 750 L660 750' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='200' y='170' font-family='Arial' font-size='12' fill='#2c3e50'>i</text>
+
+  <path d='M1720 275 L1820 275 L1820 600 L1040 600 L1040 515 L1060 515' stroke='#7f8c8d' stroke-width='2' fill='none' marker-end='url(#arrow)'/>
+  <text x='1810' y='580' font-family='Arial' font-size='12' fill='#2c3e50'>*</text>
+</svg>

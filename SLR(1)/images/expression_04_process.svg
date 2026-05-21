@@ -1,0 +1,123 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1800' height='782' viewBox='0 0 1800 782'><defs><marker id='arrow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#7f8c8d'/></marker></defs><rect width='100%' height='100%' fill='#f4f7fb'/>
+<text x='900.0' y='48.0' font-family='Arial' font-size='24' text-anchor='middle' fill='#2c3e50'>SLR(1) Parsing Steps (Stack View)</text>
+<text x='900.0' y='74' font-family='Arial' font-size='16' text-anchor='middle' fill='#34495e'>Expression: i+*i</text>
+<text x='134.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 1</text>
+<text x='222.0' y='152.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift i -&gt; s2</text>
+<rect x='64.0' y='152.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='96.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='172.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='70.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='172.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='70.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>2</text>
+<text x='172.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>i</text>
+<rect x='70.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='172.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='222.0' y='176.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + * i $</text>
+<text x='222.0' y='200.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[0, i] = s2</text>
+<line x1='134.0' y1='130.0' x2='483.0' y2='130.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='557.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 2</text>
+<text x='645.0' y='152.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce r7: F -&gt; i</text>
+<rect x='487.0' y='152.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='519.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='595.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='493.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='595.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='493.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>4</text>
+<text x='595.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>F</text>
+<rect x='493.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='595.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='645.0' y='176.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + * i $</text>
+<text x='645.0' y='200.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[2, +] = r7, GOTO[0, F] = 4</text>
+<line x1='557.0' y1='130.0' x2='906.0' y2='130.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='980.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 3</text>
+<text x='1068.0' y='152.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce r5: T -&gt; F</text>
+<rect x='910.0' y='152.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='942.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='1018.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='916.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='992.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='942.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='1018.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='916.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='992.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='942.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>6</text>
+<text x='1018.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>T</text>
+<rect x='916.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='992.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='942.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='1018.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='1068.0' y='176.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + * i $</text>
+<text x='1068.0' y='200.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[4, +] = r5, GOTO[0, T] = 6</text>
+<line x1='980.0' y1='130.0' x2='1329.0' y2='130.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='1403.0' y='114.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 4</text>
+<text x='1491.0' y='152.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: reduce r3: E -&gt; T</text>
+<rect x='1333.0' y='152.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='1365.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='1441.0' y='148.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='1339.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='1415.0' y='222.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1365.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='1441.0' y='243.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='1339.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='1415.0' y='190.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1365.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>3</text>
+<text x='1441.0' y='211.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>E</text>
+<rect x='1339.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='1415.0' y='158.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='1365.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='1441.0' y='179.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'></text>
+<text x='1491.0' y='176.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: + * i $</text>
+<text x='1491.0' y='200.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[6, +] = r3, GOTO[0, E] = 3</text>
+<line x1='1403.0' y1='262.0' x2='134.0' y2='436.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='134.0' y='420.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 5</text>
+<text x='222.0' y='458.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: shift + -&gt; s8</text>
+<rect x='64.0' y='458.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='96.0' y='454.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='172.0' y='454.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='70.0' y='528.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='528.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='549.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='172.0' y='549.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='70.0' y='496.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='496.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='517.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>3</text>
+<text x='172.0' y='517.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>E</text>
+<rect x='70.0' y='464.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='146.0' y='464.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='96.0' y='485.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>8</text>
+<text x='172.0' y='485.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>+</text>
+<text x='222.0' y='482.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: * i $</text>
+<text x='222.0' y='506.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[3, +] = s8</text>
+<line x1='134.0' y1='436.0' x2='483.0' y2='436.0' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)' />
+<text x='557.0' y='420.0' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Step 6</text>
+<text x='645.0' y='458.0' font-family='Arial' font-size='14' text-anchor='start' fill='#2c3e50'>Action: error: no action for state 8 on symbol *</text>
+<rect x='487.0' y='458.0' width='140.0' height='108.0' rx='10' ry='10' fill='#f8fbff' stroke='#bdc3c7' stroke-width='1.5' />
+<text x='519.0' y='454.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>State</text>
+<text x='595.0' y='454.0' font-family='Arial' font-size='11' text-anchor='middle' fill='#34495e'>Symbol</text>
+<rect x='493.0' y='528.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='528.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='549.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>0</text>
+<text x='595.0' y='549.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>$</text>
+<rect x='493.0' y='496.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='496.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='517.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>3</text>
+<text x='595.0' y='517.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>E</text>
+<rect x='493.0' y='464.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<rect x='569.0' y='464.0' width='52.0' height='32.0' fill='#ffffff' stroke='#2c3e50' stroke-width='1.4' />
+<text x='519.0' y='485.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>8</text>
+<text x='595.0' y='485.0' font-family='Arial' font-size='12' text-anchor='middle' fill='#2c3e50'>+</text>
+<text x='645.0' y='482.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Input: * i $</text>
+<text x='645.0' y='506.0' font-family='Arial' font-size='13' text-anchor='start' fill='#34495e'>Rule: ACTION[8, *] = error</text>
+</svg>

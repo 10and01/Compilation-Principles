@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='640' viewBox='0 0 1200 640'>
+  <defs>
+    <marker id='arrow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'>
+      <path d='M0,0 L10,5 L0,10 z' fill='#7f8c8d'/>
+    </marker>
+  </defs>
+  <rect width='100%' height='100%' fill='#f4f7fb'/>
+
+  <text x='600' y='46' font-family='Arial' font-size='24' text-anchor='middle' fill='#2c3e50'>SLR(1) Analysis Table Build Flow</text>
+
+  <rect x='80' y='70' width='360' height='220' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='260' y='108' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Grammar</text>
+  <text x='260' y='130' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>S -> E</text>
+  <text x='260' y='148' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>E -> E + T</text>
+  <text x='260' y='166' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>E -> T</text>
+  <text x='260' y='184' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>T -> T * F</text>
+  <text x='260' y='202' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>T -> F</text>
+  <text x='260' y='220' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>F -> ( E )</text>
+  <text x='260' y='238' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>F -> i</text>
+
+  <rect x='720' y='90' width='360' height='120' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='900' y='136' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>LR(0) Item Sets</text>
+  <text x='900' y='158' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>closure / goto, DFA states</text>
+
+  <rect x='80' y='330' width='360' height='120' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='260' y='376' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>FOLLOW Sets</text>
+  <text x='260' y='398' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>FOLLOW of E, T, F, S</text>
+
+  <rect x='720' y='330' width='360' height='120' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='900' y='376' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>ACTION / GOTO</text>
+  <text x='900' y='398' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>shift / reduce / accept</text>
+
+  <rect x='720' y='500' width='360' height='80' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='900' y='542' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Conflict Check</text>
+  <text x='900' y='562' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>report S/R or R/R</text>
+
+  <rect x='300' y='500' width='360' height='80' rx='12' ry='12' fill='#ffffff' stroke='#2c3e50' stroke-width='2'/>
+  <text x='480' y='542' font-family='Arial' font-size='14' text-anchor='middle' fill='#2c3e50'>Final Table Output</text>
+  <text x='480' y='562' font-family='Arial' font-size='12' text-anchor='middle' fill='#34495e'>ACTION + GOTO tables</text>
+
+  <line x1='440' y1='180' x2='720' y2='150' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <line x1='260' y1='290' x2='260' y2='330' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <line x1='900' y1='210' x2='900' y2='330' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <line x1='440' y1='390' x2='720' y2='390' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <line x1='900' y1='450' x2='900' y2='500' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+  <line x1='720' y1='540' x2='660' y2='540' stroke='#7f8c8d' stroke-width='2' marker-end='url(#arrow)'/>
+</svg>

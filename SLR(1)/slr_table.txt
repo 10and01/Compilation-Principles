@@ -1,0 +1,54 @@
+SLR(1) Parsing Report
+Grammar:
+  S -> E
+  E -> E + T | T
+  T -> T * F | F
+  F -> ( E ) | i
+
+Productions:
+  0: S' -> S
+  1: S -> E
+  2: E -> E + T
+  3: E -> T
+  4: T -> T * F
+  5: T -> F
+  6: F -> ( E )
+  7: F -> i
+
+Follow sets:
+  FOLLOW(E) = { $, ), + }
+  FOLLOW(F) = { $, ), *, + }
+  FOLLOW(S) = { $ }
+  FOLLOW(T) = { $, ), *, + }
+
+ACTION table:
+             i      +      *      (      )      $
+     0     s2                   s1              
+     1     s2                   s1              
+     2            r7     r7            r7     r7
+     3            s8                          r1
+     4            r5     r5            r5     r5
+     5                                       acc
+     6            r3     s9            r3     r3
+     7            s8                  s10       
+     8     s2                   s1              
+     9     s2                   s1              
+    10            r6     r6            r6     r6
+    11            r2     s9            r2     r2
+    12            r4     r4            r4     r4
+
+GOTO table:
+             S      E      T      F
+     0      5     3      6      4
+     1             7      6      4
+     2                            
+     3                            
+     4                            
+     5                            
+     6                            
+     7                            
+     8                    11      4
+     9                          12
+    10                            
+    11                            
+    12                            
